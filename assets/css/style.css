@@ -1,3 +1,8 @@
 .leading-me {
   height: 250px;
 }
+
+/* bootstrap overrides */
+body {
+  background-color: #fafafa;
+}
