@@ -17,7 +17,16 @@ a#github-link {
 /* #home */
 .leading-me {
   height: 250px;
+  width: 180px;
+  background-image: url('../img/joe-sprite-01.png');
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
+  padding: 4px 8px;
+  margin: auto;
   margin-bottom: 25px;
+}
+.leading-me:hover {
+  background-position: 4px -252px;
 }
 
 /* #background */
