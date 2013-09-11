@@ -1,9 +1,26 @@
+/* global */
+body {
+  position: relative;
+}
+
+a#github-link {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 149px;
+  height: 149px;
+  background-image: url('../img/github.png');
+  background-repeat: no-repeat;
+}
+
+/* #home */
 .leading-me {
   height: 250px;
   margin-bottom: 25px;
 }
 
-
+/* #background */
 #background .span6 img {
   width: 330px;
 }
