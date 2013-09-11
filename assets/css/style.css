@@ -1,5 +1,11 @@
 .leading-me {
   height: 250px;
+  margin-bottom: 25px;
+}
+
+
+#background .span6 img {
+  width: 330px;
 }
 
 /* bootstrap overrides */
