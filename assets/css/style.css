@@ -29,3 +29,10 @@ a#github-link {
 body {
   background-color: #fafafa;
 }
+
+@media only screen
+and (max-width : 979px) {
+  a#github-link {
+    display: none;
+  }
+}
