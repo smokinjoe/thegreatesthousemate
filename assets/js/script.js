@@ -13,6 +13,9 @@ $(document).ready(function () {
 
   loadTesties();
 
+  $('#another-testi').click(function () {
+    triggerNewTesti();
+  });
 });
 
 function loadTesties() {
@@ -20,7 +23,7 @@ function loadTesties() {
     testimonials = data;
     triggerNewTesti();
     $('a[href="#home"]').on('show', function () {
-      triggerNewTesti()
+      triggerNewTesti();
     });
   });
 }
