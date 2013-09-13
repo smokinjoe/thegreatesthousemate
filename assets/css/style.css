@@ -28,6 +28,15 @@ a#github-link {
 .leading-me:hover {
   background-position: 4px -252px;
 }
+.testimonials {
+  min-height: 128px;
+  position: relative;
+}
+#another-testi {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
 
 /* #background */
 #background .span6 img {
