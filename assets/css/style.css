@@ -49,11 +49,15 @@ body {
 }
 
 .thumbnails {
-  margin-left: -20px;
+  margin-left: -20px !important;
 }
 .thumbnails > li.span3 {
   margin-left: 20px;
-  width: 220px;
+}
+@media (min-width: 1200px) {
+  .thumbnails > li.span3 {
+    width: 220px;
+  }
 }
 
 @media only screen
