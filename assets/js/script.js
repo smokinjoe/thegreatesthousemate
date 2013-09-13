@@ -13,7 +13,8 @@ $(document).ready(function () {
 
   loadTesties();
 
-  $('#another-testi').click(function () {
+  $('#another-testi').click(function (e) {
+    e.preventDefault();
     triggerNewTesti();
   });
 });
