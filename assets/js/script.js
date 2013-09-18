@@ -18,7 +18,7 @@ $(document).ready(function () {
     triggerNewTesti();
   });
 
-  $("#contact-joe").on('click', function (e) {
+  $("#contact form").on('submit', function (e) {
     e.preventDefault();
 
     var _name = $("#inputName").val();
@@ -49,6 +49,7 @@ $(document).ready(function () {
     });
   });
 });
+
 
 function loadTesties() {
   $.getJSON('assets/js/testimonials.json', function(data) {
