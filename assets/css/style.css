@@ -59,13 +59,26 @@ body {
     width: 220px;
   }
 }
+/* make the interests page a little more minimal with these overrides */
+.thumbnail {
+  border: none;
+}
+.thumbnail .caption {
+  padding: 9px 0;
+}
+/* interests page/thumbnails fix so there isn't that horizontal scrollbar */
+.tab-content {
+  overflow: visible;
+}
 
+/* special style to hide fork banner */
 @media only screen
 and (max-width : 979px) {
   a#github-link {
     display: none;
   }
 }
+
 
 /* came with styles */
 body {
