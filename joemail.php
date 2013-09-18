@@ -23,7 +23,7 @@ $mail->setFrom('info@thegreatesthousemate.com', $name);
 //Set who the message is to be sent to
 $mail->addAddress('thegreatesthousemate@gmail.com', 'Joe Ekiert');
 //Set the subject line
-$mail->Subject = 'Someone is trying to contact you!';
+$mail->Subject = $name . ' is trying to contact you!';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 $mail->msgHTML("Someone is trying to get in touch with you.  Their email is: " . $email . " and their name is: " . $name);
