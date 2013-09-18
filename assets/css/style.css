@@ -91,6 +91,14 @@ body {
   line-height: 40px;
 }
 
+/* overrides to change .btn-primary background-color */
+.btn-primary {
+  background-color: #3498DB
+}
+.btn-primary:hover {
+  background-color: #2980B9;
+}
+
 /* special style to hide fork banner */
 @media only screen
 and (max-width : 979px) {
