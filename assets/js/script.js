@@ -18,8 +18,10 @@ $(document).ready(function () {
     triggerNewTesti();
   });
 
-  $("#contact form").on('submit', function (e) {
+  $("#contact-joe").on('submit', function (e) {
     e.preventDefault();
+
+    $("#contact-joe").find('button[type="submit"]').attr('disabled','disabled').addClass('disabled');
 
     var _name = $("#inputName").val();
     var _email = $("#inputEmail").val();
