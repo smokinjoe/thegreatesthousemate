@@ -17,6 +17,37 @@ $(document).ready(function () {
     e.preventDefault();
     triggerNewTesti();
   });
+
+  $("#contact-joe").on('click', function (e) {
+    e.preventDefault();
+
+    var _name = $("#inputName").val();
+    var _email = $("#inputEmail").val();
+
+    $.ajax({
+      type: "POST",
+      url: "joemail.php",
+      dataType: 'json',
+      data: {
+        name : _name,
+        email : _email
+      },
+      success: function(response) {
+        if (response.result) {
+          $('form').fadeOut(function () {
+            $("#contact").find('.well').html('<h3 class="">Talk soon!</h3><img src="assets/img/whoa-joe.jpg" height="190">');
+            $("#contact").delay(5000).slideUp(function () {
+              $('a[href="#contact"]').hide();
+              $('a[href="#interests').tab('show');
+            });
+          });
+        }
+        else {
+          $("#contact").find('.control-group').addClass('error');
+        }
+      }
+    });
+  });
 });
 
 function loadTesties() {
