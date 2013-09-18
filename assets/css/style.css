@@ -48,6 +48,7 @@ body {
   background-color: #fafafa;
 }
 
+/* overrides to help tighten up the interests page and freakin work with adjusting viewports */
 .thumbnails {
   margin-left: -20px !important;
 }
@@ -59,9 +60,16 @@ body {
     width: 220px;
   }
 }
+@media (max-width: 767px) {
+  .thumbnails > li.span3 {
+    float: none;
+    margin-left: 10px;
+  }
+}
 /* make the interests page a little more minimal with these overrides */
 .thumbnail {
   border: none;
+  padding: 4px 0px;
 }
 .thumbnail .caption {
   padding: 9px 0;
