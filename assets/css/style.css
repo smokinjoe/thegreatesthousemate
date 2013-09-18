@@ -83,6 +83,13 @@ body {
 .form-horizontal .control-group {
   margin-bottom: 5px;
 }
+/* double the sizes of them inputs */
+#contact input.doubled {
+  height: 40px;
+  padding: 8px 6px; /* not really doubled */
+  font-size: 28px;
+  line-height: 40px;
+}
 
 /* special style to hide fork banner */
 @media only screen
