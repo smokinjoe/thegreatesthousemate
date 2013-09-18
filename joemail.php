@@ -39,7 +39,7 @@ if (!$mail->send()) {
   echo json_encode(array('result' => true, 'errors' => '', 'message' => 'I\'ll be getting back to you shortly!'));
 }
 
-function stripHtmlAndSpecials($des, $isEmail) {
+function stripHtmlAndSpecials($des) {
   // Strip HTML Tags
   $clear = strip_tags($des);
   // Clean up things like &amp;
