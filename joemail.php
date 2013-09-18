@@ -19,7 +19,7 @@ $mail = new PHPMailer();
 // Set PHPMailer to use the sendmail transport
 $mail->isSendmail();
 //Set who the message is to be sent from
-$mail->setFrom($email, $name);
+$mail->setFrom('info@thegreatesthousemate.com', $name);
 //Set who the message is to be sent to
 $mail->addAddress('thegreatesthousemate@gmail.com', 'Joe Ekiert');
 //Set the subject line
