@@ -18,6 +18,11 @@ $(document).ready(function () {
     triggerNewTesti();
   });
 
+  $(".tab-navigation").on('click', function () {
+    var _index = $(this).data('index');
+    $('#tab-nav li:eq(' + _index + ') a').tab('show')
+  });
+
   $("#contact-joe").on('submit', function (e) {
     e.preventDefault();
 
@@ -56,7 +61,6 @@ $(document).ready(function () {
 function loadTesties() {
   $.getJSON('assets/js/testimonials.json', function(data) {
     for (var i = 0; i < data.length; i += 1) {
-      console.log(data[i]);
       for (var j = 0; j < data[i].testimonials.length; j += 1) {
         var _tmp = {
           "name" : data[i].name,
