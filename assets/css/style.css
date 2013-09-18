@@ -79,6 +79,11 @@ body {
   overflow: visible;
 }
 
+/* overrides for #contact to tighten up that form */
+.form-horizontal .control-group {
+  margin-bottom: 5px;
+}
+
 /* special style to hide fork banner */
 @media only screen
 and (max-width : 979px) {
