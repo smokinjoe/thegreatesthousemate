@@ -45,6 +45,7 @@ $(document).ready(function () {
             $("#contact").find('.well').html('<div class="text-center"><h3 class="">Talk soon!</h3><img src="assets/img/whoa-joe.jpg" height="190"></div>');
             $("#contact").delay(5000).slideUp(function () {
               $('a[href="#contact"]').hide();
+              $('div[data-index="3"]').hide();
               $('a[href="#interests').tab('show');
             });
           });
