@@ -1,7 +1,9 @@
 The Greatest Housemate
 ======================
 
-## Assets used
+This is the code repository for the website http://thegreatesthousemate.com that contains all the source code as well as a commit history of any changes I've ever made.
+
+**Assets used:**
 
 - [jQuery](http://jquery.com)
 - [Flatstrap](http://flatstrap.org)
