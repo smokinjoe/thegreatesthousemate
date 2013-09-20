@@ -1,5 +1,5 @@
 var testimonials = [];
-var last_testimonial_index;
+var seen_testimonials = [];
 
 $(document).ready(function () {
   $(document).on('click', '#start-tour', function () {
@@ -82,11 +82,14 @@ function loadTesties() {
 function triggerNewTesti() {
   var _index = randomize(0, testimonials.length - 1);
 
-  if (_index === last_testimonial_index) {
+  if (testimonials.length === seen_testimonials.length) {
+    seen_testimonials = [];
+  }
+  else if (seen_testimonials.indexOf(_index) !== -1) {
     _index = triggerNewTesti()
   }
   else {
-    last_testimonial_index = _index;
+    seen_testimonials.push(_index);
     $('blockquote').find('p').text(testimonials[_index].body);
     $('blockquote').find('small').text(testimonials[_index].name);
     $('blockquote').show();
